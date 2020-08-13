@@ -1,23 +1,38 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+    top: {
+        height: '20%',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+
     space: {
-        height: '100%',
+        height: '80%',
         justifyContent: 'center',
         alignItems: 'center'
     },
 
     title: {
         fontSize: 50,
-        fontWeight: 'bold',
-        color: 'black'
+        fontWeight: 'bold'
     },
 
-    container: {
-        color: 'red',
-        fontSize: 50,
-        backgroundColor: 'blue'
-    }
+    dark: {
+        color: '#e1e1e1',
+    },
+
+    light: {
+        color: 'black',
+    },
+
+    darkBackground: {
+        backgroundColor: 'black'
+    },
+
+    lightBackground: {
+        backgroundColor: '#e1e1e1'
+    },
 })
 
 export default styles
