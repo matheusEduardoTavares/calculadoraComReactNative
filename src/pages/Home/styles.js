@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
 
     space: {
         height: '80%',
-        justifyContent: 'center',
+        paddingTop: 30,
+        justifyContent: 'flex-start',
         alignItems: 'center'
     },
 
@@ -32,6 +33,48 @@ const styles = StyleSheet.create({
 
     lightBackground: {
         backgroundColor: '#e1e1e1'
+    },
+
+    darkInput: {
+        color: 'white',
+        borderColor: '#e1e1e1',
+        borderWidth: 2,
+        width: 120,
+        padding: 10,
+        margin: 5
+    },
+
+    lightInput: {
+        color: 'black',
+        borderColor: 'black',
+        borderWidth: 2,
+        width: 120,
+        padding: 10,
+        margin: 5
+    },
+
+    inline: {
+        marginTop: 10,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+
+    picker: {
+        height: 50,
+        width: 160
+    },
+
+    lightPicker: {
+        color: 'black',
+        padding: 10,
+        margin: 5
+    },
+
+    darkPicker: {
+        color: 'white',
+        backgroundColor: 'gray',
+        padding: 10,
+        margin: 5
     },
 })
 
