@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Text, View, CheckBox, TextInput, Picker, Button, Alert } from 'react-native'
+import { Text, View, CheckBox, TextInput, Picker, TouchableOpacity, Alert } from 'react-native'
 import styles from './styles.js'
 import { StatusBar } from 'expo-status-bar';
 
@@ -68,8 +68,10 @@ export default function Index() {
                     <TextInput style={theme ? styles.darkInput : styles.lightInput} placeholder="Valor 1" placeholderTextColor={theme ? "white" : "black"} onChangeText={val => setValueOne(val)} />
                     <TextInput style={theme ? styles.darkInput : styles.lightInput} placeholder="Valor 2" placeholderTextColor={theme ? "white" : "black"} onChangeText={val => setValueTwo(val)} />
                 </View>
-                <Button title="Calcular" onPress={handleCalculate}></Button>
-                <View><Text>{result}</Text></View>
+                <TouchableOpacity title="Calcular" onPress={handleCalculate} style={[styles.button, theme ? styles.darkButton : styles.lightButton]}>
+                    <Text style={styles.paragraph}>Calcular</Text>
+                </TouchableOpacity>
+                <View><Text style={[styles.subTitle, theme ? styles.dark : styles.light]}>{result}</Text></View>
             </View>
             <StatusBar style={theme ? 'light' : 'dark'} />
         </>

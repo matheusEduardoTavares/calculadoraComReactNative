@@ -19,6 +19,12 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
 
+    subTitle: {
+        fontSize: 30,
+        fontWeight: 'bold',
+        marginTop: 40
+    },
+
     dark: {
         color: '#e1e1e1',
     },
@@ -71,11 +77,38 @@ const styles = StyleSheet.create({
     },
 
     darkPicker: {
-        color: 'white',
-        backgroundColor: 'gray',
+        color: 'black',
+        backgroundColor: 'white',
         padding: 10,
         margin: 5
     },
+
+    button: {
+        width: 250,
+        marginTop: 30,
+        height: 30,
+        fontSize: 30,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
+    lightButton: {
+        color: 'black',
+        backgroundColor: '#e1e1e1',
+        borderWidth: 2,
+        borderColor: 'black'
+    },
+
+    darkButton: {
+        color: 'black',
+        backgroundColor: 'white',
+        borderWidth: 2,
+        borderColor: 'gray'
+    },
+
+    paragraph: {
+        fontSize: 20
+    }
 })
 
 export default styles
