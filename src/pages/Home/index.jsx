@@ -65,8 +65,8 @@ export default function Index() {
                     </Picker>
                 </View>
                 <View style={styles.inline}>
-                    <TextInput style={theme ? styles.darkInput : styles.lightInput} placeholder={valueOne.length === 0 ? 'Valor 1' : valueOne} placeholderTextColor={theme ? "white" : "black"} onChangeText={val => setValueOne(val)} />
-                    <TextInput style={theme ? styles.darkInput : styles.lightInput} placeholder={valueTwo.length === 0 ? 'Valor 2' : valueTwo} placeholderTextColor={theme ? "white" : "black"} onChangeText={val => setValueTwo(val)} />
+                    <TextInput style={theme ? styles.darkInput : styles.lightInput} placeholder="Valor 1" placeholderTextColor={theme ? "white" : "black"} value={valueOne} onChangeText={val => setValueOne(val)} />
+                    <TextInput style={theme ? styles.darkInput : styles.lightInput} placeholder="Valor 2" placeholderTextColor={theme ? "white" : "black"} value={valueTwo} onChangeText={val => setValueTwo(val)} />
                 </View>
                 <TouchableOpacity title="Calcular" onPress={handleCalculate} style={[styles.button, theme ? styles.darkButton : styles.lightButton]}>
                     <Text style={styles.paragraph}>Calcular</Text>
